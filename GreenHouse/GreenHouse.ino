@@ -28,10 +28,6 @@ void setup()
  
 void loop() 
 { 
-  
- 
-  
- 
   int reading = analogRead(sensorPin);
   float voltage = reading * 5.0;
   voltage /= 1024.0;
@@ -54,7 +50,8 @@ void loop()
     doorOpen = true;
   }
   
-  delay(1000); 
+  //delay 5min
+  delay(300000); 
 } 
 
 void close()
